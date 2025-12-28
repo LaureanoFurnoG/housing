@@ -1,0 +1,117 @@
+.Menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+}
+.colorBar {
+  background-color: #f6632dc5;
+  border-bottom: 1px solid white;
+}
+
+.containerMenu {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.containerMenu img {
+  width: 50px;
+  height: 50px;
+}
+
+.containerMenu ul {
+  display: flex;
+  gap: 30px;
+}
+.containerMenu * {
+  color: white;
+}
+
+.containerMenu ul li,
+.containerMenu a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.containerMenu button {
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 0;
+  background-color: #f6622d;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.containerMenu button:hover {
+  background-color: #2d3a40;
+  border: 1px solid white;
+}
+.colorBar .containerMenu button {
+  background-color: #2d3a40;
+}
+
+.containerMenu ul a:hover {
+  color: #f6622d;
+}
+
+.colorBar .containerMenu ul a:hover {
+  color: #2d3a40;
+}
+.btn-responsive, .ul-responsive{
+    display: none;
+}
+@media (max-width: 830px) {
+  .containerMenu .btn {
+    display: none;
+  }
+
+  .ul-responsive,
+  .ul-responsive a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .left{
+    left: 0px !important;
+  }
+  .ul-responsive {
+    background-color: #f6632dc5;
+    position: fixed;
+    top: 42px;
+    left: 2000px;
+    transition: 1s all;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+  }
+  .btn-responsive{
+    display: block;
+  }
+  .btn-responsive p {
+    display: block;
+    margin: 0;
+    font-size: 34px;
+  }
+  .containerMenu ul {
+    display: none;
+  }
+}
