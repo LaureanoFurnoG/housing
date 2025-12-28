@@ -17,24 +17,59 @@ const SocialOpen = ({image}:Props) =>{
     }
 
     useEffect(() => {
-    const handleResize = () => {
-        if (window.innerWidth >= 846) {
-        const btn = document.querySelector('.ContactBTN')
+        const handleResize = () => {
+            if (window.innerWidth >= 846) {
+                const btn = document.querySelector('.ContactBTN')
 
-        if (btn && window.getComputedStyle(btn).display === 'none') {
-            document
-            .querySelector('.All-Container-Circles')
-            ?.classList.remove('NoContact-Circle')
+                if (btn && window.getComputedStyle(btn).display === 'none') {
+                    document
+                    .querySelector('.All-Container-Circles')
+                    ?.classList.remove('NoContact-Circle')
+                }
+            }
         }
-        }
-    }
 
-    handleResize() 
+        handleResize() 
 
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
     }, [])
 
+    useEffect(() => {
+        const handleScrollChange = () => {
+            if (window.scrollY >= 46) {
+                const btn = document.getElementById('ContactBTN')
+                if (btn) {
+                    btn.style.display = 'flex'
+                }
+
+                const socialContainer = document.getElementById('SocialContainer')
+                if (socialContainer){
+                    socialContainer.style.bottom = '10px'
+                }
+            }else{
+                const btn = document.getElementById('ContactBTN')
+                if (btn) {
+                    btn.style.display = 'none'
+                }   
+                if (btn && window.getComputedStyle(btn).display === 'none') {
+                    document
+                    .querySelector('.All-Container-Circles')
+                    ?.classList.remove('NoContact-Circle')
+                }
+
+                const socialContainer = document.getElementById('SocialContainer')
+                if (socialContainer){
+                    socialContainer.style.bottom = 'auto'
+                }
+            }
+        }
+
+        handleScrollChange() 
+
+        window.addEventListener('scroll', handleScrollChange)
+        return () => window.removeEventListener('scroll', handleScrollChange)
+    }, [])
     return(
         <>
             <div className='Circle' onClick={() => openSocialBTN()}>

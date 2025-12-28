@@ -16,7 +16,7 @@ const Banner = () =>{
                         <button className='btn' onClick={() => location.href = '#Contact'}>CONTACTAR</button>
                     </div>
                     
-                    <div className='SocialContainer'>
+                    <div className='SocialContainer' id='SocialContainer'>
                         <div className='All-Container-Circles'>
                             <div className='LineHZ'></div>
                             <div className='Social-Circles'>
@@ -27,7 +27,7 @@ const Banner = () =>{
                             </div>
                             <div className='LineHZ'></div>
                         </div>
-                        <div className='ContactBTN'>
+                        <div className='ContactBTN' id='ContactBTN'>
                             <SocialOpen image={contact} socialName={''}></SocialOpen>
                         </div>
                     </div>
