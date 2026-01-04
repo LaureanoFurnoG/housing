@@ -1,0 +1,32 @@
+.box-container-metrics{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f6622d;
+    position: relative;
+    top: -50px;
+}
+.box-container-metrics .case{
+    width: 33%;
+}
+
+.case-middle{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.box-container-metrics .case *{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.box-container-metrics .case h2{
+    font-size: 48px;
+    margin-bottom: 0;
+}
+.box-container-metrics .case p{
+    font-size: 25px;
+    margin-top: 0;
+}
