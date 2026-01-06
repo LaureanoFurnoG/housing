@@ -35,40 +35,33 @@ const SocialOpen = ({image}:Props) =>{
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
-    useEffect(() => {
-        const handleScrollChange = () => {
-            if (window.scrollY >= 46) {
-                const btn = document.getElementById('ContactBTN')
-                if (btn) {
-                    btn.style.display = 'flex'
-                }
-
-                const socialContainer = document.getElementById('SocialContainer')
-                if (socialContainer){
-                    socialContainer.style.bottom = '10px'
-                }
-            }else{
-                const btn = document.getElementById('ContactBTN')
-                if (btn) {
-                    btn.style.display = 'none'
-                }   
-                if (btn && window.getComputedStyle(btn).display === 'none') {
-                    document
-                    .querySelector('.All-Container-Circles')
-                    ?.classList.remove('NoContact-Circle')
-                }
-
-                const socialContainer = document.getElementById('SocialContainer')
-                if (socialContainer){
-                    socialContainer.style.bottom = 'auto'
-                }
+   useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 26) {
+            const btn = document.querySelector<HTMLElement>('.ContactBTN')
+            const circles = document.querySelector<HTMLElement>('.All-Container-Circles')
+            const container = document.querySelector<HTMLElement>('.SocialContainer')
+            container?.classList.add("BottomButtons")
+            if (btn) {
+                btn.style.display = 'flex'
             }
+
+            circles?.classList.add('NoContact-Circle')
+        }else{
+            const btn = document.querySelector<HTMLElement>('.ContactBTN')
+            const circles = document.querySelector<HTMLElement>('.All-Container-Circles')
+            const container = document.querySelector<HTMLElement>('.SocialContainer')
+            container?.classList.remove("BottomButtons")
+
+            if (btn) {
+                btn.style.display = 'none'
+            }
+            circles?.classList.remove('NoContact-Circle')
         }
+    }
 
-        handleScrollChange() 
-
-        window.addEventListener('scroll', handleScrollChange)
-        return () => window.removeEventListener('scroll', handleScrollChange)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
     }, [])
     return(
         <>
