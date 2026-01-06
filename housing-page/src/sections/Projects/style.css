@@ -1,0 +1,74 @@
+.Center-projects {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 500px;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.Sup-content-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 12;
+  width: 90%;
+}
+.inf-content-projects {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 12;
+  width: 90%;
+}
+.inf-content-projects h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 38px;
+  margin: 0;
+  color: white;
+}
+.inf-content-projects p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.Sup-content-projects h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: white;
+}
+.drawer-custom {
+  background-color: rgba(51, 61, 65, 0.93) !important;
+}
+.drawer-custom * {
+  color: white;
+  border-color: white !important;
+}
+
+.Sup-content-projects button {
+  background-color: #f6622d;
+}
+
+.Sup-content-projects button:hover {
+  background-color: #2d3a40 !important;
+}
+
+@media(max-width:500px){
+    .Sup-content-projects{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .Sup-content-projects button{
+        width: 100%;
+    }
+    .Sup-content-projects h1{
+        width: 100%;
+        text-align: start;
+    }
+    .Center-projects{
+        gap: 300px !important;
+    }
+}
