@@ -6,12 +6,11 @@ const HeaderMenu = () =>{
     useEffect(() => {
         const onScroll = () => {
         const menu = document.getElementById('Menu')
-
-        if (window.scrollY > 30) {
-            menu?.classList.add('colorBar')
-        } else {
-            menu?.classList.remove('colorBar')
-        }
+            if (window.scrollY > 30) {
+                menu?.classList.add('colorBar')
+            } else {
+                menu?.classList.remove('colorBar')
+            }
         }
 
         window.addEventListener('scroll', onScroll)

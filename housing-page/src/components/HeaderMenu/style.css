@@ -1,6 +1,7 @@
 .Menu {
   display: flex;
   position: fixed;
+  z-index: 10000;
   width: 100%;
   justify-content: center;
 }
