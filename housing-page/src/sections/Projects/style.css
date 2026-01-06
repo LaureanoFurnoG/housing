@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
-  gap: 500px;
+  gap: 600px;
   align-items: center;
   flex-direction: column;
   background-position: center;
@@ -55,20 +55,45 @@
 .Sup-content-projects button:hover {
   background-color: #2d3a40 !important;
 }
-
-@media(max-width:500px){
-    .Sup-content-projects{
-        flex-direction: column-reverse;
-        margin-top: 20px;
-    }
-    .Sup-content-projects button{
-        width: 100%;
-    }
-    .Sup-content-projects h1{
-        width: 100%;
-        text-align: start;
-    }
-    .Center-projects{
-        gap: 300px !important;
-    }
+.ScrollProjects {
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 5px;
+  scrollbar-color: red rgba(255, 166, 0, 0);
+}
+.image-project {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+@media(max-height: 870px){
+  .Center-projects{
+    gap: 460px;
+  }
+}
+@media(max-height: 700px){
+  .Center-projects{
+    gap: 100px !important;
+  }
+}
+@media (max-width: 500px) {
+  .Sup-content-projects {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .Sup-content-projects button {
+    width: 100%;
+  }
+  .Sup-content-projects h1 {
+    width: 100%;
+    text-align: start;
+  }
+  .Center-projects {
+    gap: 400px;
+  }
+  .ScrollProjects {
+    max-height: 740px;
+  }
 }
