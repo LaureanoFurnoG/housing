@@ -66,6 +66,7 @@
   align-items: center;
   position: fixed;
   right: 5%;
+  z-index: 999;
   gap: 10px !important;
 }
 .LineHZ {
@@ -96,12 +97,16 @@
 .ContactBTN {
   display: none;
 }
+.BottomButtons{
+  bottom: 10px !important;
+  right: 10px;
+}
 @media (max-width: 856px) {
   .NoContact-Circle {
-    display: flex;
+    display: flex !important; 
   }
   .ContactBTN {
-    display: flex;
+    display: flex !important;
   }
   .SocialContainer {
     bottom: 30px;

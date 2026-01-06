@@ -1,21 +1,152 @@
-.center-all-About{
-    display: flex;
+.center-all-About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  width: 90%;
+  gap: 2%;
+}
+.left-zone {
+  width: 60%;
+  gap: 10px;
+}
+.left-zone .Text-about h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 47px;
+  margin: 0px;
+}
+.left-zone .Text-about p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.left-zone .Vision-mision {
+  display: flex;
+  gap: 4%;
+  background-color: #f6622d;
+  padding: 20px;
+}
+
+.left-zone .Vision-mision .mision {
+  width: 48%;
+}
+.left-zone .Vision-mision .vision {
+  width: 48%;
+}
+.left-zone .Vision-mision {
+  background: linear-gradient(#f6632de1, #f6632de1),
+    url(../../assets/Vision-backgroun.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-zone .Vision-mision .vision h2,
+.left-zone .Vision-mision .mision h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  border-bottom: 2px solid #2d3a40;
+  font-size: 30px;
+}
+.left-zone .Vision-mision .vision p,
+.left-zone .Vision-mision .mision p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.img-about {
+  width: 40%;
+}
+
+.Text-about {
+  width: 100%;
+}
+.Information-bun {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.info-c {
+  background: linear-gradient(#f6632de1, #f6632de1),
+    url(../../assets/bun-information/c-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-s {
+  background: linear-gradient(#f6632de1, #f6632de1),
+    url(../../assets/bun-information/security-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-n {
+  background: linear-gradient(#f6632de1, #f6632de1),
+    url(../../assets/bun-information/normative-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info h2, .info p{
+  color: white;
+}
+.info h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.info p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+@media (max-width: 785px) {
+  .box-container-metrics {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+  .case {
+    width: 100% !important;
+  }
+  .Information-bun{
+    flex-direction: column;
+  }
+  .info{
+    width: auto;
+  }
+  .case-middle {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .about {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .img-about {
     width: 100%;
-}
-
-.about{
-    display: flex;
-    width: 90%;
-    gap: 5%;
-}
-
-.img-about{
-    width: 40%;
-}
-
-.Text-about{
-    width: 60%;
+    height: 300px;
+  }
+  .left-zone {
+    width: 100% !important;
+  }
+  .Vision-mision {
+    flex-direction: column;
+  }
+  .Vision-mision * {
+    width: 100% !important;
+  }
 }

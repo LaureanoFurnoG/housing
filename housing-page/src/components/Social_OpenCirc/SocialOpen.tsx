@@ -17,22 +17,51 @@ const SocialOpen = ({image}:Props) =>{
     }
 
     useEffect(() => {
-    const handleResize = () => {
-        if (window.innerWidth >= 846) {
-        const btn = document.querySelector('.ContactBTN')
+        const handleResize = () => {
+            if (window.innerWidth >= 846) {
+                const btn = document.querySelector('.ContactBTN')
 
-        if (btn && window.getComputedStyle(btn).display === 'none') {
-            document
-            .querySelector('.All-Container-Circles')
-            ?.classList.remove('NoContact-Circle')
+                if (btn && window.getComputedStyle(btn).display === 'none') {
+                    document
+                    .querySelector('.All-Container-Circles')
+                    ?.classList.remove('NoContact-Circle')
+                }
+            }
         }
+
+        handleResize() 
+
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 26) {
+            const btn = document.querySelector<HTMLElement>('.ContactBTN')
+            const circles = document.querySelector<HTMLElement>('.All-Container-Circles')
+            const container = document.querySelector<HTMLElement>('.SocialContainer')
+            container?.classList.add("BottomButtons")
+            if (btn) {
+                btn.style.display = 'flex'
+            }
+
+            circles?.classList.add('NoContact-Circle')
+        }else{
+            const btn = document.querySelector<HTMLElement>('.ContactBTN')
+            const circles = document.querySelector<HTMLElement>('.All-Container-Circles')
+            const container = document.querySelector<HTMLElement>('.SocialContainer')
+            container?.classList.remove("BottomButtons")
+
+            if (btn) {
+                btn.style.display = 'none'
+            }
+            circles?.classList.remove('NoContact-Circle')
         }
     }
 
-    handleResize() 
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
     return(
