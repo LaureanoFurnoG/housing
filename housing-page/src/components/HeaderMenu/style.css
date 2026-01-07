@@ -81,7 +81,10 @@
   .containerMenu .btn {
     display: none;
   }
-
+  .Menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .ul-responsive,
   .ul-responsive a {
     list-style: none;
