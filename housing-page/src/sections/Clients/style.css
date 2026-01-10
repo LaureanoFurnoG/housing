@@ -1,0 +1,83 @@
+#Clients {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  background: linear-gradient(#2d3a40de, #2d3a40de),
+    url("../../assets/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dupl-commets {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#Clients h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 5%;
+  color: white;
+  font-size: 72px;
+}
+
+.carouselWrapper {
+  width: 90%;
+  height: 100%;
+}
+.slick-dots {
+  position: relative !important;
+  margin-top: 30px !important;
+}
+.responsive {
+  display: none !important;
+}
+
+.ant-carousel {
+  position: relative;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  width: 30px;
+  height: 44px;
+  z-index: 10;
+}
+
+.ant-carousel .slick-prev {
+  background-size: contain;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-carousel .slick-next::after {
+    margin-left: 5px;
+    margin-top: 12px;
+}
+:where(.css-dev-only-do-not-override-iecf5o).ant-carousel .slick-prev::after {
+    margin-left: 8px !important;
+    margin-top: 12px;
+}
+.ant-carousel .slick-next {
+  background-size: contain;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 715px) {
+  .responsive {
+    display: block !important;
+  }
+  .Normal {
+    display: none !important;
+  }
+}
