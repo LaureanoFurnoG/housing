@@ -3,14 +3,14 @@ import Metrics from '../../components/Metrics/Metrics'
 import NormIcon from '../../assets/bun-information/normative-icon.svg'
 import SecIcon from '../../assets/bun-information/security-icon.svg'
 import CIcon from '../../assets/bun-information/c-icon.svg'
-
+import AboutIMG from '../../assets/aboutImage.svg'
 const About = () =>{
     return(
         <>  
             <div className='center-all-About' id='about'>
                 <Metrics MetricD={[{Name: "Proyectos realizados", Number: 100},{Name: "Años de experiencia", Number: 20}, {Name: "Profesionales capacitados", Number: 50}]}></Metrics>
                 <div className='about'>
-                    <img className='img-about' src="" alt="" />
+                    <img className='img-about' src={AboutIMG} alt="" />
                     <div className='left-zone'>
                         <div className='Text-about'>
                             <h2>Quienes Somos</h2>
