@@ -57,6 +57,7 @@
 }
 
 .img-about {
+  object-fit: cover;
   width: 40%;
 }
 

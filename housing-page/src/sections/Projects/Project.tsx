@@ -1,16 +1,16 @@
 import './style.css'
 import { useState } from 'react';
 import { Button, Drawer } from 'antd';
-import ImageBackroundtest from '../../assets/image.png'
-import ImageTest from '../../assets/banner.png'
+import ImageBackroundPileta from '../../assets/PilProject.svg'
+import ImageTest from '../../assets/banner.svg'
 const Project = () =>{
     const [open, setOpen] = useState(false);
     const [Projects,] = useState([
         {
             id: 0,
-            imagen: ImageBackroundtest, 
-            title: 'Remodelación cocina completa', 
-            text: 'Muebles en tonos claros con tiradores dorados, mesadas amplias y un diseño funcional en “L” que combina estilo y practicidad.'
+            imagen: ImageBackroundPileta, 
+            title: 'Remodelación pileta completa', 
+            text: 'Transformamos una pileta en desuso en un espacio moderno y funcional. Realizamos la renovación integral del revestimiento, mejoras estructurales y puesta a punto de la iluminación, logrando un acabado prolijo, duradero y visualmente atractivo. Un antes y después que devuelve vida, confort y valor al espacio.'
         },
         {
             id: 1,
@@ -18,25 +18,6 @@ const Project = () =>{
             title: 'Test', 
             text: 'testtttttttttttttttttttttt'
         },
-        {
-            id: 2,
-            imagen: ImageBackroundtest, 
-            title: 'Remodelación cocina completa', 
-            text: 'Muebles en tonos claros con tiradores dorados, mesadas amplias y un diseño funcional en “L” que combina estilo y practicidad.'
-        },
-        {
-            id: 3,
-            imagen: ImageBackroundtest, 
-            title: 'Remodelación cocina completa', 
-            text: 'Muebles en tonos claros con tiradores dorados, mesadas amplias y un diseño funcional en “L” que combina estilo y practicidad.'
-        },
-        {
-            id: 4,
-            imagen: ImageBackroundtest, 
-            title: 'Remodelación cocina completa', 
-            text: 'Muebles en tonos claros con tiradores dorados, mesadas amplias y un diseño funcional en “L” que combina estilo y practicidad.'
-        }
-        
     ])
     const [selectedProject, setSelectedProject] = useState(Projects[0])
     const selectProject = (id: number) =>{

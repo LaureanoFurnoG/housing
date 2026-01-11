@@ -2,8 +2,8 @@
   width: 100%;
   height: 900px;
   background: linear-gradient(#2d3a40de, #2d3a40de),
-    url("../../assets/banner.png");
-  background-size: auto;
+    url("../../assets/banner.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -118,7 +118,14 @@
     width: 100%;
   }
 }
-
+@media(max-width: 600px){
+  .img-banner{
+    background-position: center;
+  }
+  .container-text h1{
+    font-size: 58px;
+  }
+}
 @media (max-width: 350px) {
   .container-text h1 {
     font-size: 48px;
