@@ -9,10 +9,13 @@
 
 .about {
   display: flex;
-  width: 90%;
+  width: 85%;
   gap: 2%;
 }
 .left-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 60%;
   gap: 10px;
 }
@@ -27,6 +30,7 @@
 .left-zone .Vision-mision {
   display: flex;
   gap: 4%;
+  height: 50%;
   background-color: #f6622d;
   padding: 20px;
 }
@@ -57,8 +61,10 @@
 }
 
 .img-about {
-  object-fit: cover;
   width: 40%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .Text-about {
@@ -67,7 +73,7 @@
 .Information-bun {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   gap: 10px;
   margin-bottom: 10px;
 }

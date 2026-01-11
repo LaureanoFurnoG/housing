@@ -21,14 +21,14 @@
 #Clients h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
-  width: 90%;
+  width: 85%;
   margin-bottom: 5%;
   color: white;
   font-size: 72px;
 }
 
 .carouselWrapper {
-  width: 90%;
+  width: 85%;
   height: 100%;
 }
 .slick-dots {

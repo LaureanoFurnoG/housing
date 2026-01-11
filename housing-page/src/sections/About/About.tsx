@@ -10,15 +10,15 @@ const About = () =>{
             <div className='center-all-About' id='about'>
                 <Metrics MetricD={[{Name: "Proyectos realizados", Number: 100},{Name: "Años de experiencia", Number: 20}, {Name: "Profesionales capacitados", Number: 50}]}></Metrics>
                 <div className='about'>
-                    <img className='img-about' src={AboutIMG} alt="" />
+                    <img data-aos="fade-right" className='img-about' src={AboutIMG} alt="" />
                     <div className='left-zone'>
-                        <div className='Text-about'>
+                        <div data-aos="fade-left" className='Text-about'>
                             <h2>Quienes Somos</h2>
                             <p>Housing Design S.A. es una empresa fundada en 2015 en la Ciudad Autónoma de Buenos Aires, dedicada a la construcción, instalaciones termomecánicas, climatización y soluciones integrales de seguridad electrónica. Nuestro trabajo se basa en la calidad técnica, la seguridad operativa y el acompañamiento integral en cada obra.</p>
                             <p>Contamos con un equipo de profesionales especializados en obra civil, HVAC, ventilación, eficiencia energética y sistemas de seguridad electrónica. Atendemos a desarrolladoras, industrias, comercios, administraciones y pymes, otorgando a cada cliente la misma importancia sin importar el tamaño de su operación.</p>
                             <p>Nuestro compromiso es ofrecer soluciones confiables, eficientes y alineadas a la normativa vigente, con resultados duraderos y un servicio postventa sólido.</p>
                         </div>
-                        <div className='Vision-mision'>
+                        <div data-aos="fade-up" className='Vision-mision'>
                             <div className='mision'>
                                 <h2>MISIÓN</h2>
                                 <p>Brindar soluciones integrales en construcción, instalaciones termomecánicas y
@@ -38,17 +38,17 @@ const About = () =>{
                     </div>
                 </div>
                 <div className='Information-bun'>
-                    <div className='info info-s'>
+                    <div data-aos="fade-up" data-aos-duration="800" className='info info-s'>
                         <img src={SecIcon} alt="" />
                         <h2>COMPROMISO CON LA SEGURIDAD</h2>
                         <p>Planificación preventiva, gestión documental y cumplimiento de protocolos.</p>
                     </div>
-                    <div className='info info-n'>
+                    <div data-aos="fade-up" data-aos-duration="1400" className='info info-n'>
                         <img src={NormIcon} alt="" />
                         <h2>CUMPLIMIENTO NORMATIVO TOTAL</h2>
                         <p>CABA, IRAM, RITE, SRT, Código de Edificación.</p>
                     </div>
-                    <div className='info info-c'>
+                    <div data-aos="fade-up" data-aos-duration="2000" className='info info-c'>
                         <img src={CIcon} alt="" />
                         <h2>CALIDAD GARANTIZADA</h2>
                         <p>Con técnicos matriculados y profesionales especializados.</p>

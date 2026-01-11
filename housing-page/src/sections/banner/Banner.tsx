@@ -10,7 +10,7 @@ const Banner = () =>{
             <HeaderMenu></HeaderMenu>
             <div className='img-banner'>
                 <div className='Container-g'>
-                    <div className='container-text'>
+                    <div data-aos="fade-right" className='container-text'>
                         <h1>CONSTRUYENDO SUEÑOS, CREANDO FUTUROS</h1>
                         <p>Housing Design transforma ideas en obras sólidas y funcionales, combinando calidad, innovación y cumplimiento de plazos para cada proyecto.</p>
                         <button className='btn' onClick={() => location.href = '#Contact'}>CONTACTAR</button>

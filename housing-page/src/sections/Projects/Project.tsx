@@ -58,7 +58,7 @@ const Project = () =>{
                             </div>
                         </Drawer>
                     </div>
-                    <div className='inf-content-projects'>
+                    <div data-aos="fade-right" className='inf-content-projects'>
                         <h2>{selectedProject.title}</h2>
                         <p>{selectedProject.text}</p>
                     </div>

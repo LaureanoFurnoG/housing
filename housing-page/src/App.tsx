@@ -5,8 +5,17 @@ import Project from './sections/Projects/Project'
 import Services from './sections/Services/Services'
 import Clients from './sections/Clients/Clients'
 import Contact from './sections/Contact/Contact'
-function App() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
+function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 800,
+    });
+  }, []);
   return (
     <>
       <Banner></Banner>

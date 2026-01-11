@@ -5,7 +5,7 @@ const Contact = () =>{
         <>
             <section id='Contact'>
                 <div className='ContentForm-Map'>
-                    <div className='formCont'>
+                    <div data-aos="fade-right" className='formCont'>
                         <h2>¡CONSTRUYAMOS TUS IDEAS!</h2>
                         <form className='contact-form' action="">
                             <input className='Name' type="text" placeholder='NOMBRE'/>
@@ -15,7 +15,7 @@ const Contact = () =>{
                             <input className='sendBtn' type="submit" value="ENVIAR" />
                         </form>
                     </div>
-                    <div className='map'>
+                    <div data-aos="fade-left" className='map'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.564211811666!2d-58.44224921069098!3d-34.58989178703464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58b0ab877ed%3A0xb618ba6455ab9d45!2sGodoy%20Cruz%201371%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1768085919176!5m2!1ses-419!2sar" width="600" height="450"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
