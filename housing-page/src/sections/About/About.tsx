@@ -10,7 +10,7 @@ const About = () =>{
             <div className='center-all-About' id='about'>
                 <Metrics MetricD={[{Name: "Proyectos realizados", Number: 100},{Name: "Años de experiencia", Number: 20}, {Name: "Profesionales capacitados", Number: 50}]}></Metrics>
                 <div className='about'>
-                    <img data-aos="fade-right" className='img-about' src={AboutIMG} alt="" />
+                    <img data-aos="fade-right" className='img-about aos-init' src={AboutIMG} alt="" />
                     <div className='left-zone'>
                         <div data-aos="fade-left" className='Text-about'>
                             <h2>Quienes Somos</h2>

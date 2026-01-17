@@ -1,11 +1,13 @@
 import './style.css'
 import logo from '../../assets/Logo.svg'
 import { useEffect, useState } from 'react'
+
 const HeaderMenu = () =>{
     const [stateMenu, setStateMenu] = useState<boolean>(true)
+
     useEffect(() => {
         const onScroll = () => {
-        const menu = document.getElementById('Menu')
+            const menu = document.getElementById('Menu')
             if (window.scrollY > 30) {
                 menu?.classList.add('colorBar')
             } else {
@@ -28,7 +30,7 @@ const HeaderMenu = () =>{
         }
         setStateMenu(!stateMenu)
     }
-    
+
     return(
         <>
             <header className='Menu' id='Menu'>
@@ -44,11 +46,11 @@ const HeaderMenu = () =>{
                     <button className='btn' onClick={() => location.href = '#Contact'}>CONTACTAR</button>
                 </div>
                 <ul className='ul-responsive' id='ul-resp'>
-                    <li><a href="#about">SOBRE NOSOTROS</a></li>
-                    <li><a href="#Projects">PROYECTOS</a></li>
-                    <li><a href="#Services">SERVICIOS</a></li>
-                    <li><a href="#Clients">NUESTRAS VALORACIONES</a></li>
-                    <li><a href="#Contact">CONTACTAR</a></li>
+                    <li><a href="#about" onClick={() => activeMenu(false)}>SOBRE NOSOTROS</a></li>
+                    <li><a href="#Projects" onClick={() => activeMenu(false)}>PROYECTOS</a></li>
+                    <li><a href="#Services" onClick={() => activeMenu(false)}>SERVICIOS</a></li>
+                    <li><a href="#Clients" onClick={() => activeMenu(false)}>NUESTRAS VALORACIONES</a></li>
+                    <li><a href="#Contact" onClick={() => activeMenu(false)}>CONTACTAR</a></li>
                 </ul>
             </header>
         </>
