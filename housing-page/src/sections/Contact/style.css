@@ -36,7 +36,10 @@
   flex-direction: column;
   gap: 15px;
 }
-
+.contact-form .ant-form-item *{
+  width: 100% !important;
+  display: block;
+}
 .contact-form input {
   height: 50px;
   border: none;
@@ -64,7 +67,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-footer hr{
+footer hr {
   width: 85%;
 }
 .contact-data {
@@ -94,37 +97,62 @@ footer * {
   text-decoration: none;
   list-style: none;
 }
-
+.icons-socialmedias {
+  display: flex;
+  gap: 10px;
+}
+.icons-footer {
+  padding: 10px;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+}
+.icons-footer i {
+  color: red;
+  transition: 0.5s all;
+}
+.icons-footer:hover {
+  border: 1px solid white;
+  background-color: #f6622d;
+}
+.icons-footer:hover i {
+  color: white;
+}
 @media (max-width: 741px) {
   .ContentForm-Map {
     flex-direction: column;
   }
   .formCont {
-    width: 85%;
+    width: 90%;
     border: none;
   }
   .map {
-    width: 85%;
+    width: 90%;
   }
   .map iframe {
     height: 500px;
   }
 }
 
-@media(max-width: 630px){
-  .contact-data{
+@media (max-width: 630px) {
+  .contact-data {
     flex-direction: column;
   }
-  .sectionsgroup{
+  .sectionsgroup {
     flex-direction: column;
     gap: 0;
     padding-top: 20px;
   }
-  .sectionsgroup img{
+  .sectionsgroup img {
     width: 100px;
     height: 100px;
   }
-  footer p{
+  footer p {
     text-align: center;
   }
 }

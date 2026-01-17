@@ -31,7 +31,7 @@ const Services = () =>{
                         <div className='service'>
                             <img data-aos="fade-right" data-aos-duration="1500" src={Secutiry} className='service-icon' alt="" />
                             <div className='text-service'>
-                                <h2 className='title-service'>Seguridad electrónicas</h2>
+                                <h2 className='title-service'>seguridad electrónica</h2>
                                 <p>Brindamos instalación, actualización y mantenimiento de sistemas de CCTV, video vigilancia IP, controles de acceso, alarmas y sistemas antiintrusión, sensores perimetrales e integración de sistemas de seguridad, junto con asesoramiento técnico, auditoría de instalaciones existentes y actualización de sistemas analógicos a tecnología digital.</p>
                             </div>
                         </div>
