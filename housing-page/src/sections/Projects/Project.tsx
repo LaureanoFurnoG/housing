@@ -14,7 +14,7 @@ const Project = () =>{
             id: 0,
             imagen: ImageBackroundPileta,
             imagen2: ImageBackroundPiletaLater,
-            title: 'Remodelación pileta completa', 
+            title: 'Renovación pileta completa', 
             text: 'Transformamos una pileta en desuso en un espacio moderno y funcional. Realizamos la renovación integral del revestimiento, mejoras estructurales y puesta a punto de la iluminación, logrando un acabado prolijo, duradero y visualmente atractivo. Un antes y después que devuelve vida, confort y valor al espacio.'
         },
         {
@@ -29,6 +29,7 @@ const Project = () =>{
 
     const selectProject = (id: number) =>{
         setSelectedProject(Projects[id])
+        setOpen(false);
     }
     const showDrawer = () => {
         setOpen(true);

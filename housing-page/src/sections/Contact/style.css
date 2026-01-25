@@ -57,7 +57,7 @@
   transition: 1s all;
 }
 .sendBtn:hover {
-  background-color: #8f3c1e;
+  background-color: #8f3c1e !important;
 }
 
 footer {

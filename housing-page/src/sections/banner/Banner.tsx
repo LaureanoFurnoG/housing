@@ -2,10 +2,8 @@ import './style.css'
 import SocialMC from '../../components/Social_mediaCircle/SocialMC'
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu'
 
-import facebook from '../../assets/socialIcons/facebook.svg'
 import instagram from '../../assets/socialIcons/instagram.svg'
 import email from '../../assets/socialIcons/gmail.svg'
-import linkedin from '../../assets/socialIcons/link.svg'
 
 import contact from '../../assets/contacts.svg'
 import SocialOpen from '../../components/Social_OpenCirc/SocialOpen'
@@ -25,10 +23,8 @@ const Banner = () =>{
                         <div className='All-Container-Circles'>
                             <div className='LineHZ'></div>
                             <div className='Social-Circles'>
-                                <SocialMC link={''} image={facebook} socialName={'facebook'} ></SocialMC>
-                                <SocialMC link={''} image={linkedin} socialName={'linkedin'} ></SocialMC>
-                                <SocialMC link={''} image={email} socialName={'email'} ></SocialMC>
-                                <SocialMC link={''} image={instagram} socialName={'instagram'} ></SocialMC>
+                                <SocialMC link={'mailto:housing.dgn@gmail.com'} image={email} socialName={'email'} ></SocialMC>
+                                <SocialMC link={'https://www.instagram.com/housing.argentina/'} image={instagram} socialName={'instagram'} ></SocialMC>
                             </div>
                             <div className='LineHZ'></div>
                         </div>

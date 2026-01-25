@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://LaureanoFurnoG.github.io/housing",
+  "homepage": "https://housingargentina.com.ar",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

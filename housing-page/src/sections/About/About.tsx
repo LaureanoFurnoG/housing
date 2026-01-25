@@ -14,7 +14,7 @@ const About = () =>{
                     <div className='left-zone'>
                         <div data-aos="fade-left" className='Text-about'>
                             <h2>Quienes Somos</h2>
-                            <p>Housing Design S.A. es una empresa fundada en 2015 en la Ciudad Autónoma de Buenos Aires, dedicada a la construcción, instalaciones termomecánicas, climatización y soluciones integrales de seguridad electrónica. Nuestro trabajo se basa en la calidad técnica, la seguridad operativa y el acompañamiento integral en cada obra.</p>
+                            <p>Housing Design S.A. es una empresa fundada en 2010 en la Ciudad Autónoma de Buenos Aires, dedicada a la construcción, instalaciones termomecánicas, climatización y soluciones integrales de seguridad electrónica. Nuestro trabajo se basa en la calidad técnica, la seguridad operativa y el acompañamiento integral en cada obra.</p>
                             <p>Contamos con un equipo de profesionales especializados en obra civil, HVAC, ventilación, eficiencia energética y sistemas de seguridad electrónica. Atendemos a desarrolladoras, industrias, comercios, administraciones y pymes, otorgando a cada cliente la misma importancia sin importar el tamaño de su operación.</p>
                             <p>Nuestro compromiso es ofrecer soluciones confiables, eficientes y alineadas a la normativa vigente, con resultados duraderos y un servicio postventa sólido.</p>
                         </div>

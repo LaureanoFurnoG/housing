@@ -1,26 +1,50 @@
 import './style.css';
 import Logo from '../../assets/Logo.svg'
+import { WarningFilled,  CheckCircleOutlined } from '@ant-design/icons';
+
 import axios from "axios";
 import type { FormProps } from 'antd';
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, notification } from 'antd';
+import { useState } from 'react';
 
 
 
 const Contact = () =>{
+    const [api, contextHolder] = notification.useNotification();
+    const [disabledForm, setDisabledForm] = useState(false)
+
     const onFinish: FormProps['onFinish'] = async (values) => {
+        setDisabledForm(true);
         try{
             console.log(values)
-            values.emailClient = 'laureanofurno@gmail.com'
+            values.emailClient = 'housing.dgn@gmail.com'
             const response = await axios.post("https://send-emails-three.vercel.app/api/sendEmail", values)
             console.log(response)
+            api.open({
+                message: 'Datos enviados correctamente',
+                description:
+                '¡Gracias por llenar el formulario! En breves me pondré en contacto',
+                icon: <CheckCircleOutlined style={{ color: '#05ff3bff' }} />,
+                showProgress: true
+            });
+            setDisabledForm(false);
         }catch(error){
             console.log(error)
+            api.open({
+                message: 'Ocurrio un error',
+                description:
+                'Se presento un error al enviar el mensaje, por favor reintente o rellene los campos correctamente',
+                icon: <WarningFilled style={{ color: 'red' }} />,
+                showProgress: true
+            });
+            setDisabledForm(false)
         }
     };
-   
+
     return(
         <>
             <section id='Contact'>
+                {contextHolder}
                 <div className='ContentForm-Map'>
                     <div data-aos="fade-right" className='formCont'>
                         <h2>¡CONSTRUYAMOS TUS IDEAS!</h2>
@@ -52,7 +76,7 @@ const Contact = () =>{
                             name="inputForm3"
                             rules={[{ required: true, message: 'Por favor ingrese su teléfono' }]}
                         >
-                            <Input className="Phone" placeholder="Teléfono" />
+                            <input type="number" name="" id="" style={{borderRadius:6}} className="Phone" placeholder="Teléfono"/>
                         </Form.Item>
 
                         <Form.Item
@@ -67,7 +91,7 @@ const Contact = () =>{
                         </Form.Item>
 
                         <Form.Item>
-                            <Button className="sendBtn" type="primary" htmlType="submit">
+                            <Button  disabled={disabledForm} className="sendBtn" type="primary" htmlType="submit">
                             Enviar
                             </Button>
                         </Form.Item>
@@ -97,14 +121,12 @@ const Contact = () =>{
                         <div>
                             <h2>CONTACTOS</h2>
                             <ul className='contacts'>
-                                <li>EMAIL: contactar@housing.com</li>
+                                <li>EMAIL: housing.dgn@gmail.com</li>
                                 <li>TLF: +54 0 11 5555-5555</li>
                             </ul>
                             <div className='icons-socialmedias'>
-                                <a href="" className='icons-footer'><i className="fa-brands fa-facebook-f"></i></a>
-                                <a href="" className='icons-footer'><i className="fa-brands fa-linkedin-in"></i></a>
-                                <a href="" className='icons-footer'><i className="fa-brands fa-instagram"></i></a>
-                                <a href="" className='icons-footer'><i className="fa-regular fa-envelope"></i></a>
+                                <a href="https://www.instagram.com/housing.argentina/" className='icons-footer'><i className="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:housing.dgn@gmail.com" className='icons-footer'><i className="fa-regular fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
